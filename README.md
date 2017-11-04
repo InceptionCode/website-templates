@@ -10,8 +10,8 @@ You should install browser-sync globally with node.
 ## Viewing The Templates
 
 In order to view the templates you simply have to download the project folder and navigate to the HTML folder. Once there you can click on any HTML file and view the template(s).
-While on an HTML5 on the right hand side of the document or webpage you should see a black tab with an arrow icon inside. This button or tab will provide direct links to other templates once clicked on.
-
+While on an HTML file on the right hand side of the document or webpage you should see a black tab with an arrow icon inside. This button or tab will provide direct links to other templates once clicked on.
+If you followed my instructions for installing Node plus Browser-sync you can navigate to the project folder via command-line and run "npm start" in order to start the Broswer-sync command and view the templates on your localhost.
 
 ## Contribution
 
