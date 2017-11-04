@@ -1,0 +1,102 @@
+header {
+  position: relative;
+  top: -8px;
+  left: -8px;
+  background-image: url("../images/hamburger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+header nav {
+  background: white;
+  box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
+  padding: 18px;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  font-family: Georgia, Serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: black;
+  margin-right: 20px;
+  padding: 8px 16px;
+}
+
+.home-nav {
+  padding: 0 0 2px 0!important;
+}
+.home-nav:hover {
+  background: transparent!important;
+  border-bottom: 2px solid #999;
+}
+
+header nav a:hover {
+  background: #999;
+}
+
+header h1 {
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+  color: #555;
+  font-family: Georgia, Serif;
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+section {
+  padding: 40px;
+  margin-top: 40px;
+}
+
+section#about .img-container {
+  width: 100%;
+}
+
+section#about .img-1,.img-2 {
+  min-width: 600px;
+  height: auto;
+  filter: opacity(0.75);
+}
+
+section#about div.flex {
+  justify-content: space-between;
+}
+
+section#about article#art-1{
+  margin-left: 40px;
+}
+
+section#about article#art-2{
+  margin-right: 40px;
+}
+
+section#about hr {
+  margin: 80px 0;
+  border-top: 0;
+  border: 1px solid #f1f1f1;
+}
+
+section#about article h1 {
+  font-size: 2.3em;
+  font-family: Georgia, serif; 
+  font-weight: 300;
+}
+
+section#about article h3 {
+  font-weight: 300;
+}
+
+section#about p {
+  font-size: 1.18em;
+}
+
+section#about span {
+  background: #f1f1f1;
+  padding: 2px 5px;
+}

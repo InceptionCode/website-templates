@@ -1,0 +1,378 @@
+.bg-chi {
+  background-image: url("../images/chicago.jpg");
+}
+
+.bg-la {
+  background-image: url("../images/la.jpg");
+}
+
+.bg-ny {
+  background-image: url("../images/ny.jpg");
+}
+
+header {
+  position: relative;
+  left: -8px;
+  width: 100vw;
+  min-height: 750px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 6.5em 0;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.caption h2 {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+.caption b {
+  font-size: 1.25em;
+}
+
+.flex-ns {
+  display: flex;
+}
+
+.flow-row {
+  flex-flow: row wrap;
+}
+
+.flow-column {
+  flex-flow: column wrap;
+}
+
+.show-all a {
+  display: block;
+}
+.show-1 a:not(:first-child) {
+  display: none;
+}
+
+nav {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+}
+
+nav a:not(:first-child) {
+  margin: 0 25px;
+}
+
+nav a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: auto;
+  border: none;
+  outline: none;
+}
+
+nav a:hover {
+  background-color: lightgray;
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 12px 40px;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.search {
+  order: 1;
+  position: absolute;
+  right: 0;
+  padding: 15px 20px;
+}
+
+.search:hover {
+  background: #f44336;
+}
+
+#dropdown {
+  position:relative;
+}
+
+#dropdown:hover{
+  background: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+#dropdown-options {
+  position:fixed;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  background: white;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#dropdown-options a {
+  color: black;
+  margin: 10px 0 !important;
+  text-align: center;
+}
+
+
+#mobile-nav{
+  margin-top: 10px;
+}
+
+
+#mobile-nav i, #close-mb-nav i {
+  color: white;
+  font-size: 2.2em;
+  position: absolute;
+  right: 1%;
+  padding: 10px 20px;
+}
+
+#mobile-nav i:hover, #close-mb-nav i:hover {
+  background: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+#close-mb-nav i {
+  bottom: 0;
+}
+
+/* The Band Section */
+
+section {
+  padding: 40px;
+  font-family: Helvetica, sans-serif;
+}
+
+section#band article {
+  display: flex;
+  width: 76.5%;
+  margin: 10px auto;
+  font-family: Helvetica, sans-serif;
+}
+
+article h2 {
+ text-align: center;
+ font-size: 2em;
+ font-weight: 400;
+}
+
+section#band > div.flex{
+  justify-content: center;
+}
+
+section#band > div.flex div {
+  margin: 10px 40px;
+}
+
+section#band > div.flex div p {
+  font-family: Helvetica, sans-serif;
+}
+
+
+/* Tour Section */
+
+section#tour {
+  position: relative;
+  left: -8px;
+  width: 100%;
+  padding: 80px 40px;
+  background: black;
+  font-family: Helvetica, sans-serif;
+}
+
+section#tour h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: white;
+}
+
+section#tour .dates {
+  background: white;
+  width: 80%;
+  padding: 10px;
+  margin: 45px auto;
+  border: 2px solid gray;
+  font-size: 14px;
+}
+
+section#tour hr {
+  border-top: 1px solid lightgray;
+  width: 96%;
+}
+
+section#tour span {
+  background: red;
+  color: white;
+  padding: 5px;
+}
+
+section#tour span.fr {
+  background: black;
+  padding: 5px 10px;
+  border-radius: 50%;
+  float: right;
+}
+
+section#tour .tickets {
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+section#tour div.tickets .cards {
+  background: white;
+  margin: 0 10px;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+section#tour div.tickets img:hover {
+  filter: brightness(50%);
+}
+section#tour div.tickets .cards p {
+  width: 90%;
+  margin: 20px auto;
+}
+
+section#tour div.tickets .cards button {
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 20px;
+  pointer-events: all;
+}
+
+section#tour div.tickets .cards button:hover {
+  cursor: pointer;
+  background: lightgray;
+  color: black;
+}
+
+section#contact {
+  background: white;
+}
+
+section#contact .flex {
+  max-width: 860px;
+  margin: 25px auto;
+  justify-content: space-between;
+}
+
+section#contact .flex div:nth-child(1) i {
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+
+section#contact form input {
+  padding: 15px;
+  width: 35%;
+  margin-top: 4px;
+  margin-left: 15px;
+  border: 1px solid black;
+}
+
+section#contact form input[name="Message"] {
+  display: block;
+  width: 84.7%;
+}
+
+section#contact form input[type="button"] {
+  width: 32%!important;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  float: right;
+}
+
+section#contact form input[type="button"]:hover {
+  background: lightgray;
+  color: black;
+  cursor: pointer;
+}
+/* Mobile */
+@media(max-width: 1330px) {
+  section#tour .tickets {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#tour div.tickets .cards {
+    background: white;
+    margin: 10px;
+  }
+}
+
+@media(max-width: 900px) {
+
+  #extended-nav a {
+    width: 50%!important;
+  }
+
+  .flex-ns a {
+    width: 50%;
+    margin: 10px 0!important;
+  }
+  .search {
+    width: auto!important;
+  }
+}
+
+@media(max-width: 650px) {
+  .caption {
+    display: none;
+  }
+  section#tour .tickets {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 550px) {
+  section#contact form input {
+    width:100%!important;
+    margin-left: 0;
+  }
+}

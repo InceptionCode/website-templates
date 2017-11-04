@@ -1,0 +1,12 @@
+{
+  "name": "microsoft-certified",
+  "version": "1.0.0",
+  "description": "All practice files used in order to learn and obtain the neccessary Microsoft certifications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"./html/*.html, css/*.css, js/*.js\" --startPath \"/html/band.html\""
+  },
+  "author": "Darrell Washington Jr.",
+  "license": "ISC"
+}

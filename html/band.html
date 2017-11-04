@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Templates</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/all-temps.css">
+  <link rel="stylesheet" href="../css/template1.css">
+</head>
+<body>
+  <header id="home" class = "bg-chi">
+    <nav id="nav" class= "show-all flex-ns flow-row"> 
+      <a class="nav-a" href="#home">Home</a>
+      <a class="nav-a" href="#band">Band</a>
+      <a class="nav-a" href="#tour">Tour</a>
+      <a class="nav-a" href="#contact">Contact</a>
+      <a class="search nav-a" href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+      <div id="dropdown">
+        <button id="dropdown-button">
+          More <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+        </button>
+        <div id="dropdown-options" class="dn">
+          <a href="">Merchandise</a>
+          <a href="">Extras</a>
+          <a href="">Media</a>
+        </div>
+      </div>
+      <div id="extended-nav" class="dn">
+        <a class="nav-a" href="#merchandise">Merchandise</a>
+        <a class="nav-a" href="extras">Extras</a>
+        <a class="nav-a" href="media">Media</a>
+      </div>
+      <span id="mobile-nav" class= "dn">
+        <i class="fa fa-bars" aria-hidden="true"></i> 
+      </span>
+      <span id="close-mb-nav" class="dn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </span>
+    </nav>
+    <div id = "slide-1" class="caption db">
+      <h2>Chicago</h2>
+      <p><b>Thank you, Chicago - A night we won't forget!</b></p>
+    </div>
+    <div id="slide-2" class="caption dn">
+      <h2>Los Angeles</h2>
+      <p><b>We had the best time playing in Venice Beach!</b></p>
+    </div>
+    <div id="slide-3" class="caption dn">
+      <h2>New York</h2>
+      <p><b>The atmosphere in New York was amazing.</b></p>
+    </div>
+  </header>
+  <!-- The Band Section -->
+  <section id="band">
+    <article class="flow-column">
+      <h2 class="upper tracked">The Band</h2>
+      <p class="light-txt center-txt">We love music</p>
+      <p class="justify">
+        We have created a fictional band website. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </article>
+    <div class="flex flow-row">
+      <div> 
+        <p class="center-txt"> Name </p>
+        <img src="../images/bandmember.jpg" alt="">
+      </div>
+      <div>
+        <p class="center-txt"> Name </p>
+        <img src="../images/bandmember.jpg" alt=""> 
+      </div>
+      <div>
+        <p class="center-txt"> Name </p>
+        <img src="../images/bandmember.jpg" alt=""> 
+      </div>
+    </div>
+    </div>
+  </section>
+<!-- Tour Section -->
+  <section id="tour">
+    <h2 class="upper tracked center-txt"> Tour Dates </h2>
+    <p class="light-txt center-txt"> Remember to book your tickets! </p>
+    <div>
+      <div class="flex flow-column dates">
+        <p class="light-txt">
+          September
+          <span class= "dib"> Sold Out</span>
+        </p>
+        <hr>
+        
+        <p class="light-txt">
+          October
+          <span class= "dib"> Sold Out</span>
+        </p>
+        <hr>
+        
+        <p class="light-txt">
+          November
+          <span class= "dib fr"> 3 </span>
+        </p>
+      </div>
+      <div class="flex flow-row tickets">
+        <div class="cards">
+          <img src="../images/newyork.jpg" alt="">
+          <p class="heading">New York</p>
+          <p class="light-txt">Fri 27 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+        <div class="cards">
+          <img src="../images/paris.jpg" alt="">
+          <p class="heading">Paris</p>
+          <p class="light-txt">Sat 28 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+        <div class="cards">
+          <img src="../images/sanfran.jpg" alt="">
+          <p class="heading">San Francisco</p>
+          <p class="light-txt">Sun 29 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section -->
+  <section id="contact">
+    <h2 class="upper tracked center-txt">Contact</h2>
+    <p class="light-txt center-txt">Fan? Drop a note!</p>
+    <div class="flex flow-row">
+      <div>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Chicago,US</p>
+        <p><i class= "fa fa-phone" aria-hidden="true"></i>Phone: +1-22-34-399</p>
+        <p><i class= "fa fa-envelope" aria-hidden="true"></i>Email: mail@mail.com</p>
+      </div>
+      <div>
+        <form action="submit">
+          <input type="text" placeholder="Name" name="Name" required>
+          <input type="email" placeholder="Email" name="Email" required>
+          <input type="text" placeholder="Message" name="Message" required>
+          <input type="button" value="Send" name="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Temp Nav -->
+  <nav class="temp-nav">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    <i class="dn fa fa-chevron-right" aria-hidden="true"></i>
+  </nav>
+  <div class="temp-nav-options">
+    <a href="/html/band.html">Band</a>
+    <a href="/html/catering.html">Catering</a>
+  </div>
+  <script src="../js/all-temp.js"></script>
+  <script src="../js/template1.js"></script>
+</body>
+</html>

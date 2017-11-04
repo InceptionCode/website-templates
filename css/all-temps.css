@@ -1,0 +1,119 @@
+.flex {
+  display: flex;
+}
+
+.container-grid {
+  display: grid;
+}
+
+.di {
+  display: initial;
+}
+
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.tracked {
+  letter-spacing: 2px;
+}
+
+.tracked-x2 {
+  letter-spacing: 4px;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.line-1_5 {
+  line-height: 1.5;
+}
+
+.line-2 {
+  line-height: 2;
+}
+
+.light-txt {
+  color: gray;
+  font-weight: 200;
+  font-size: 1.15em;
+}
+
+.container-large {
+  max-width: 1100px;
+  margin: 10px auto;
+}
+.container {
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+/* Navigation */
+.temp-nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: unset;
+  background: black;
+  box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: 0.5s ease-in-out all;
+}
+
+div.temp-nav-options {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateX(100%);
+  width: 300px;
+  background: black;
+  z-index: 1000;
+  transition: 0.5s ease-in-out all;
+}
+
+div.temp-nav-options a {
+  display: block;
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+div.temp-nav-options a:hover {
+  background: white;
+  color: black;
+}
+
+.temp-nav i {
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.temp-nav:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+}
+
