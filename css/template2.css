@@ -74,9 +74,11 @@ section#about article#art-1{
 
 section#about article#art-2{
   margin-right: 40px;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
 }
 
-section#about hr {
+hr {
   margin: 80px 0;
   border-top: 0;
   border: 1px solid #f1f1f1;
@@ -99,4 +101,52 @@ section#about p {
 section#about span {
   background: #f1f1f1;
   padding: 2px 5px;
+}
+
+section#about #art-2 h3{
+  font-weight: normal;
+}
+
+section#about #art-2 p{
+  font-size: 14px;
+}
+
+section#contact {
+  font-family: Georgia, serif;
+}
+
+section#contact h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+section#contact .large-blue-txt {
+  color: #607d8b;
+  font-size: 20px;
+}
+
+section#contact input {
+  border: none;
+  border-bottom: 1px solid #777;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 25px;
+  font-size: 14px;
+  outline: none;
+}
+
+section#contact input:focus {
+  border-bottom: 1px solid limegreen;
+}
+
+section#contact input[type="button"] {
+  padding: 15px;
+  width: auto;
+  background: lightgray;
+}
+
+section#contact input[type="button"]:hover {
+  cursor: pointer;
+  border-bottom: 1px solid limegreen;
 }
