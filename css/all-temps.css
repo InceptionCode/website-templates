@@ -117,3 +117,9 @@ div.temp-nav-options a:hover {
   transform: scale(1.10);
 }
 
+/* Media */
+@media(max-width: 650px) {
+  .container-large {
+    max-width: 100%;
+  }
+}

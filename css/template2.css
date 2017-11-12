@@ -59,7 +59,7 @@ section#about .img-container {
 }
 
 section#about .img-1,.img-2 {
-  min-width: 600px;
+  max-width: 600px;
   height: auto;
   filter: opacity(0.75);
 }
@@ -149,4 +149,47 @@ section#contact input[type="button"] {
 section#contact input[type="button"]:hover {
   cursor: pointer;
   border-bottom: 1px solid limegreen;
+}
+
+
+/* Mobile */
+
+@media( max-width: 1040px ) {
+  section#about .flex {
+    flex-direction: column;
+  }
+  section#about img {
+    position:relative;
+    left: 20%;
+  }
+}
+
+@media(max-width: 800px) {
+  section#about img {
+    position:relative;
+    left: 10%;
+  }
+  section#about .img-1,.img-2 {
+    max-width: 100%;
+    min-width: 200px;
+  }
+}
+
+@media(max-width: 690px) {
+  section {
+    padding: 0;
+  }
+  nav>div {
+    display: none;
+  }
+  section#about img {
+    position:relative;
+    left: 0%;
+  }
+  section#about article#art-1 {
+    margin-left: 0;
+  }
+  section#about article#art-2 {
+    margin-right: 0;
+  }
 }
