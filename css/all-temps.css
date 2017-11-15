@@ -33,6 +33,10 @@
   letter-spacing: 4px;
 }
 
+.tracked-x3 {
+  letter-spacing: 5px;
+}
+
 .center-txt {
   text-align: center;
 }
