@@ -64,7 +64,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background: black;
   box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
   text-transform: uppercase;
@@ -211,7 +211,7 @@ section#band > div.flex div p {
 section#tour {
   position: relative;
   left: -8px;
-  width: 100%;
+  width: 100vw;
   padding: 80px 40px;
   background: black;
   font-family: Helvetica, sans-serif;
@@ -263,6 +263,10 @@ section#tour div.tickets .cards {
 
 .heading {
   font-weight: bold;
+}
+
+section#tour div.tickets img {
+  width: 100%;
 }
 
 section#tour div.tickets img:hover {
@@ -344,6 +348,15 @@ section#contact form input[type="button"]:hover {
   }
 }
 
+@media (max-width: 1050px) {
+  section {
+    padding: 40px 0px;
+  }
+  section#tour {
+    padding: 80px 0px;
+  }
+}
+
 @media(max-width: 900px) {
 
   #extended-nav a {
@@ -374,5 +387,11 @@ section#contact form input[type="button"]:hover {
   section#contact form input {
     width:100%!important;
     margin-left: 0;
+  }
+}
+
+@media(max-width:415px) {
+  header {
+    min-height: 300px;
   }
 }

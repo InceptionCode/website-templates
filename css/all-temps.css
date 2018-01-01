@@ -33,10 +33,6 @@
   letter-spacing: 4px;
 }
 
-.tracked-x3 {
-  letter-spacing: 5px;
-}
-
 .center-txt {
   text-align: center;
 }
@@ -125,5 +121,10 @@ div.temp-nav-options a:hover {
 @media(max-width: 650px) {
   .container-large {
     max-width: 100%;
+  }
+}
+@media(max-width:410px) {
+  .justify {
+    text-align: left;
   }
 }

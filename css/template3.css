@@ -15,10 +15,13 @@ header {
 }
 
 header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: white;
   box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
-  padding: 18px;
   justify-content: space-between;
+  z-index: 1;
 }
 
 header a {
@@ -39,10 +42,11 @@ header a:hover {
 
 nav div {
   margin-top: 7px;
+  padding: 15px 18px;
 }
 
 .home-nav {
-  padding: 5px 10px!important;
+  padding: 18px 25px!important;
 }
 
 .home-nav:hover {
@@ -77,8 +81,106 @@ div.title span {
   opacity: 0.95;
 }
 
+section#projects {
+  padding: 40px 0;
+}
+
+.h1-container {
+  padding-left: 16px;
+  padding-bottom: 30px;
+  margin-left: 15px;
+  max-width: 95%;
+}
+  
+.h1-container h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
+  font-weight: 400;
+}
+
+.house-set1, .house-set2 {
+  width: 100%;
+}
+
+.house-set1 img, .house-set2 img {
+  width: 100%;
+  height: auto;
+}
+
+.house-set1>div, .house-set2>div {
+  position: relative;
+  padding: 0 8px;
+}
+
+.house-set1>div span, .house-set2>div span {
+  position: absolute;
+  top: 0;
+  padding: 10px 15px;
+  color: white;
+  background: black;
+}
+
+section#about .h1-container {
+  padding-bottom: 0;
+}
+
+section#about .openning-p {
+  width: 95%;
+  padding: 0 32px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+section#about .team-container {
+  padding: 25px 20px 0 20px;
+  width: 95%;
+}
+
+section#about .team-container h1 {
+  font-weight: 500;
+}
+
+section#about .team-container img {
+  width: 100%;
+  height: auto;
+}
+
+section#about .team-container div {
+  padding: 8px;
+}
+
+section#about .team-container button  {
+  padding: 8px 16px;
+  width: 100%;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: #f1f1f1;
+  outline: 0;
+  border: none;
+  vertical-align: middle;
+}
+
+section#about .team-container button:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
 @media(max-width: 690px) {
   nav>div, div.title h1 {
     display: none;
+  }
+  .house-set1, .house-set2 {
+    flex-wrap: wrap;
+  }
+  .h1-container {
+    padding-left: 0;
+  }
+  section#about .openning-p {
+    padding: 0 15px;
+  }
+  section#about .team-container {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
   }
 }

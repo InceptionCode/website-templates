@@ -155,6 +155,9 @@ section#contact input[type="button"]:hover {
 /* Mobile */
 
 @media( max-width: 1040px ) {
+  header {
+    background-position-x: 31%;
+  }
   section#about .flex {
     flex-direction: column;
   }
