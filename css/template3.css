@@ -2,6 +2,10 @@
   font-family: Helvetica, sans-serif;   
 }
 
+body {
+  margin: 0;
+}
+
 header {
   position: relative;
   top: -8px;
@@ -163,6 +167,73 @@ section#about .team-container button  {
 section#about .team-container button:hover {
   cursor: pointer;
   background: lightgray;
+}
+
+section#contact {
+  padding-top: 40px;
+}
+
+section#contact .h1-container {
+  padding-bottom: 0;
+}
+
+section#contact p {
+  padding-left: 32px;
+}
+
+section#contact form {
+  padding: 5px 0 20px 32px;
+}
+
+form input:not([type="button"]) {
+  width: 97%;
+  font-size: 16px;
+  padding: 15px 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+form input:not([type="button"]):hover, form input:not([type="button"]):focus {
+  border-bottom: 1px solid black;
+}
+
+form input[type="button"] {
+  display: block;
+  width: 160px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+form input[type="button"]:hover {
+  cursor: pointer;
+  background: lightgray;
+  color: black;
+}
+div#googleMap {
+  filter: grayscale(75%);
+}
+
+footer {
+  padding: 40px 0px;
+  margin: 0;
+  background: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover, footer a:active {
+  color: darkred;
 }
 
 @media(max-width: 690px) {

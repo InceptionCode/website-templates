@@ -71,6 +71,7 @@
   right: 0;
   left: unset;
   background: black;
+  opacity: 0.5;
   box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
   width: 50px;
   height: 50px;
@@ -115,6 +116,7 @@ div.temp-nav-options a:hover {
 .temp-nav:hover {
   cursor: pointer;
   transform: scale(1.10);
+  opacity: 1;
 }
 
 /* Media */
