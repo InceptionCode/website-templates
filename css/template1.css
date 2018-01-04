@@ -372,6 +372,12 @@ section#contact form input[type="button"]:hover {
   }
 }
 
+@media(max-width:1024px) {
+  header {
+    min-height: 565px;
+  }
+}
+
 @media(max-width: 650px) {
   .caption {
     display: none;

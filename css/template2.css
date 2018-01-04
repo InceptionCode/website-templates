@@ -195,4 +195,7 @@ section#contact input[type="button"]:hover {
   section#about article#art-2 {
     margin-right: 0;
   }
+  section#contact form input:not([type="button"]) {
+    padding: 25px 0;
+  }
 }
