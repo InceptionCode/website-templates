@@ -69,6 +69,40 @@ nav i {
   margin-right: 3px;
 }
 
+.mobile-nav {
+  display: none;
+}
+i.fa-bars, i.fa-times {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  font-size: 1.5em;
+}
+
+i.fa-bars:hover, i.fa-times {
+  cursor: pointer;
+}
+
+.mobile-nav li {
+  list-style: none;
+}
+.mobile-nav li:not(.home){
+  background: white;
+}
+
+.mobile-nav a {
+  width: 100%;
+}
+
+.mobile-nav a:not([href = "#home"]) {
+  color: black !important;
+}
+
+.mobile-nav a.search {
+  float: none;
+  background: white;
+}
+
 @media(max-width: 850px) {
   header h1 {
     font-size: 20px;
@@ -82,5 +116,11 @@ nav i {
   }
   header h1.large {
     display: none;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: initial;
   }
 }
