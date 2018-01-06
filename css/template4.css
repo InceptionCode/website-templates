@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.list-display {
+  display: list-item;
+}
+
 header {
   background-image: url("../images/parallax1.jpg");
   background-position: center;
@@ -101,6 +105,47 @@ i.fa-bars:hover, i.fa-times {
 .mobile-nav a.search {
   float: none;
   background: white;
+}
+
+section {
+  color: #777;
+  padding: 40px 0;
+  line-height: 1.8;
+}
+
+section#about h1, section#about p.sub-about {
+  text-align: center;
+}
+
+section#about h1 {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+section#about p.sub-about {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+section#about .paragraph-container {
+  flex-direction: column;
+  max-width: 980px;
+  padding-bottom: 40px;
+  margin: auto;
+  font-size: 15px;
+}
+
+.paragraph-container p {
+  margin: 15px;
+}
+
+section#about .profile-desc {
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: auto;
+  font-size: 15px;
 }
 
 @media(max-width: 850px) {
