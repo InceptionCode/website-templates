@@ -142,16 +142,62 @@ section#about .paragraph-container {
 }
 
 section#about .profile-desc {
-  flex-wrap: wrap;
   max-width: 980px;
   margin: auto;
   font-size: 15px;
+}
+
+section#about .profile-desc img {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+
+section#about .profile-desc img:hover {
+  opacity: 1;
+}
+
+section#about .profile-desc div  {
+  width: 50%;
+  margin: 0 25px;
+}
+
+section#about .name-container i  {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+section#about .name-container {
+  font-weight: bold;
+  width: 130px!important;
+  margin: auto auto 40px auto!important;
 }
 
 @media(max-width: 850px) {
   header h1 {
     font-size: 20px;
     letter-spacing: 6px;
+  }
+  section#about .profile-desc {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  section#about .profile-desc {
+    width: 80%;
+    justify-content: center;
+  }
+  section#about .profile-desc div {
+    width: 100%;
+    margin: 0;
+  }
+  section#about .profile-desc div:nth-child(2) p {
+    display: none;
+  }
+  section#about .name-container {
+    font-size: 18px;
   }
 }
 
