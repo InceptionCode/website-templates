@@ -201,6 +201,59 @@ section#about .name-container {
   }
 }
 
+section#about .skills-wrapper {
+  max-width: 980px;
+  margin: auto;
+}
+
+section#about .skill-container {
+  background: lightgray;
+}
+
+section#about .skill-container div {
+  background: #616161;
+  color: white;
+  padding: 8px;
+}
+
+section#about .skills {
+  margin: 40px 0;
+}
+
+section#about .skill-title {
+  letter-spacing: 10px;
+  font-size: 18px;
+}
+
+section#about .skill-amount-1 {
+  width: 90%;
+}
+
+section#about .skill-amount-2 {
+  width: 85%; 
+}
+
+section#about .skill-amount-3 {
+  width: 75%;
+}
+
+section#about .statistics {
+  background: #616161;
+  color: White;
+  font-weight: 300;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+section#about .statistics div {
+  min-width: 100px;
+  padding: 24px 0;
+}
+
+section#about .statistics h2 {
+  font-weight: 300;
+}
+
 @media(max-width:500px) {
   header h1.mobile {
     display: initial;
@@ -213,5 +266,8 @@ section#about .name-container {
   }
   .mobile-nav {
     display: initial;
+  }
+  section#about .statistics {
+    flex-direction: column;
   }
 }
