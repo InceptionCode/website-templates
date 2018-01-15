@@ -26,17 +26,15 @@ header {
   left: 50%;
   transform: translate(-50%, 0%);
   padding: 6.5em 0;
-  color: white;
-  font-family: Helvetica, sans-serif;
   text-align: center;
 }
 
-.caption h2 {
+.caption-h2 {
   font-size: 2em;
   letter-spacing: 1.5px;
 }
 
-.caption b {
+.caption-b {
   font-size: 1.25em;
 }
 
@@ -65,20 +63,21 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  background: black;
-  box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
   text-transform: uppercase;
   overflow: hidden;
   z-index: 1;
 }
 
-nav a:not(:first-child) {
+.nav-style {
+  background: black;
+  box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
+}
+
+.nav-link-margin {
   margin: 0 25px;
 }
 
-nav a {
-  color: white;
-  font-family: Helvetica, sans-serif;
+.nav-a {
   font-size: 1.2em;
   padding: 15px 20px;
   text-decoration: none;
@@ -87,7 +86,7 @@ nav a {
   outline: none;
 }
 
-nav a:hover {
+.nav-a-hover:hover {
   background-color: lightgray;
   color: black;
   font-weight: bold;
@@ -97,11 +96,8 @@ button {
   display: inline-block;
   margin-top: 5px;
   padding: 12px 40px;
-  background: none;
-  color: white;
   outline: none;
   border: none;
-  font-family: Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   letter-spacing: 2px;
@@ -110,6 +106,10 @@ button {
   pointer-events: none;
 }
 
+.db-button-style {
+  background: none;
+  color: white;
+}
 
 .search {
   order: 1;
@@ -118,44 +118,46 @@ button {
   padding: 15px 20px;
 }
 
-.search:hover {
+.search-hover:hover {
   background: #f44336;
 }
 
-#dropdown {
+.dropdown-position {
   position:relative;
 }
 
-#dropdown:hover{
+.dropdown-hover:hover{
   background: lightgray;
   color: black;
   cursor: pointer;
 }
 
-#dropdown-options {
+.db-options {
   position:fixed;
   padding: 0;
   margin: 0;
   min-width: 160px;
-  background: white;
-  box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
   overflow: hidden;
   z-index: 1;
 }
 
-#dropdown-options a {
-  color: black;
+.db-options-style {
+  background: white;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+.db-options-a {
   margin: 10px 0 !important;
   text-align: center;
 }
 
 
-#mobile-nav{
+.mb-nav{
   margin-top: 10px;
 }
 
 
-#mobile-nav i, #close-mb-nav i {
+.mb-nav-i {
   color: white;
   font-size: 2.2em;
   position: absolute;
@@ -163,13 +165,14 @@ button {
   padding: 10px 20px;
 }
 
-#mobile-nav i:hover, #close-mb-nav i:hover {
+.nav-i-hover:hover {
   background: lightgray;
   color: black;
   cursor: pointer;
 }
 
-#close-mb-nav i {
+
+.close-nav-i {
   bottom: 0;
 }
 
@@ -177,172 +180,189 @@ button {
 
 section {
   padding: 40px;
-  font-family: Helvetica, sans-serif;
 }
 
-section#band article {
+article {
   display: flex;
   width: 76.5%;
   margin: 10px auto;
-  font-family: Helvetica, sans-serif;
 }
 
-article h2 {
+.art-h2 {
  text-align: center;
+ text-transform: uppercase;
+ letter-spacing: 2px;
  font-size: 2em;
  font-weight: 400;
 }
 
-section#band > div.flex{
+.sub-paragraph {
+  font-weight: 200;
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.art-paragraph {
+  text-align: justify;
+}
+
+.band-members {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
-section#band > div.flex div {
+.band-member {
   margin: 10px 40px;
 }
 
-section#band > div.flex div p {
-  font-family: Helvetica, sans-serif;
-}
-
-
 /* Tour Section */
 
-section#tour {
+.tour-section {
   position: relative;
   left: -8px;
   width: 100vw;
   padding: 80px 40px;
-  background: black;
-  font-family: Helvetica, sans-serif;
 }
 
-section#tour h2 {
-  font-size: 2em;
-  font-weight: 400;
-  color: white;
-}
-
-section#tour .dates {
-  background: white;
+.dates {
+  display: flex;
+  flex-flow: column wrap;
   width: 80%;
   padding: 10px;
   margin: 45px auto;
-  border: 2px solid gray;
   font-size: 14px;
 }
 
-section#tour hr {
+.dates-style {
+  background: white;
+  border: 2px solid gray;
+}
+
+hr {
   border-top: 1px solid lightgray;
   width: 96%;
 }
 
-section#tour span {
-  background: red;
-  color: white;
+.dates-span {
+  display: inline-block;
   padding: 5px;
 }
 
-section#tour span.fr {
-  background: black;
+.dates-span-sold {
+  background: red;
+  color: white;
+}
+
+.dates-span-fr {
   padding: 5px 10px;
   border-radius: 50%;
   float: right;
 }
 
-section#tour .tickets {
+.dates-span-unsold {
+  background: black;
+  color: white;
+}
+
+.tickets {
+  display: flex;
   margin-top: 20px;
   justify-content: center;
   flex-wrap: nowrap;
 }
 
-section#tour div.tickets .cards {
-  background: white;
+.cards {
   margin: 0 10px;
 }
 
-.heading {
-  font-weight: bold;
-}
-
-section#tour div.tickets img {
+.tickets-img {
   width: 100%;
 }
 
-section#tour div.tickets img:hover {
+.tickets-img-hover:hover {
   filter: brightness(50%);
 }
-section#tour div.tickets .cards p {
+
+.cards-p {
   width: 90%;
   margin: 20px auto;
 }
 
-section#tour div.tickets .cards button {
-  background: black;
-  color: white;
+.cards-button {
   outline: none;
   border: none;
   margin: 20px;
   pointer-events: all;
 }
 
-section#tour div.tickets .cards button:hover {
+.cards-button-skin {
+  background: black;
+  color: white;
+}
+
+.cards-button-skin:hover {
   cursor: pointer;
   background: lightgray;
   color: black;
 }
 
-section#contact {
-  background: white;
-}
-
-section#contact .flex {
+.contact-wrapper {
+  display: flex;
+  flex-flow: row wrap;
   max-width: 860px;
   margin: 25px auto;
   justify-content: space-between;
 }
 
-section#contact .flex div:nth-child(1) i {
+.contact-info-icons {
   margin-right: 15px;
   font-size: 1.5em;
 }
 
-section#contact form input {
+.form-input {
   padding: 15px;
   width: 35%;
   margin-top: 4px;
   margin-left: 15px;
-  border: 1px solid black;
 }
 
-section#contact form input[name="Message"] {
+.form-message {
   display: block;
   width: 84.7%;
 }
 
-section#contact form input[type="button"] {
+.form-button {
   width: 32%!important;
-  background: black;
-  color: white;
   text-transform: uppercase;
   font-size: 14px;
   border: none;
   float: right;
 }
 
-section#contact form input[type="button"]:hover {
+.form-border {
+  border: 1px solid black;
+}
+
+.button-style {
+  background: black;
+  color: white;
+}
+
+.button-style:hover {
   background: lightgray;
   color: black;
   cursor: pointer;
 }
+
 /* Mobile */
 @media(max-width: 1330px) {
-  section#tour .tickets {
+  .tickets {
     flex-direction: column;
     align-items: center;
   }
 
-  section#tour div.tickets .cards {
+  .cards {
     background: white;
     margin: 10px;
   }
@@ -352,7 +372,7 @@ section#contact form input[type="button"]:hover {
   section {
     padding: 40px 0px;
   }
-  section#tour {
+  .tour-section {
     padding: 80px 0px;
   }
 }
@@ -382,7 +402,7 @@ section#contact form input[type="button"]:hover {
   .caption {
     display: none;
   }
-  section#tour .tickets {
+  .tickets {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -390,7 +410,7 @@ section#contact form input[type="button"]:hover {
 }
 
 @media(max-width: 550px) {
-  section#contact form input {
+  .form-input {
     width:100%!important;
     margin-left: 0;
   }
