@@ -2,27 +2,38 @@ header {
   position: relative;
   top: -8px;
   left: -8px;
-  background-image: url("../images/hamburger.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
 }
 
-header nav {
-  background: white;
-  box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
-  padding: 18px;
-  justify-content: space-between;
+.burger-bg {
+  background-image: url("../images/hamburger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-header nav a {
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  padding: 18px;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.nav-style {
+  background: white;
+  box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
+}
+
+.nav-a {
   text-decoration: none;
   font-family: Georgia, Serif;
   font-weight: 200;
-  font-size: 16px;
-  color: black;
+  font-size: 14px;
+  letter-spacing: 4px;
   margin-right: 20px;
   padding: 8px 16px;
 }
@@ -35,18 +46,21 @@ header nav a {
   border-bottom: 2px solid #999;
 }
 
-header nav a:hover {
-  background: #999;
+.nav-a:hover {
+  background: lightgray;
 }
 
-header h1 {
+.header-h1 {
   position: absolute;
   left: 2%;
   bottom: 0;
-  color: #555;
   font-family: Georgia, Serif;
   font-size: 2.2em;
   font-weight: 300;
+}
+
+.header-gray {
+  color: #555;
 }
 
 section {
@@ -54,81 +68,74 @@ section {
   margin-top: 40px;
 }
 
-section#about .img-container {
+.img-container {
   width: 100%;
 }
 
-section#about .img-1,.img-2 {
+.tableset-img {
   max-width: 600px;
   height: auto;
   filter: opacity(0.75);
 }
 
-section#about div.flex {
+.container-large {
+  display: flex;
   justify-content: space-between;
 }
 
-section#about article#art-1{
-  margin-left: 40px;
-}
-
-section#about article#art-2{
-  margin-right: 40px;
-  font-family: Helvetica, sans-serif;
-  width: 100%;
+article {
+  margin: 20px;
+  width: 100%
 }
 
 hr {
   margin: 80px 0;
   border-top: 0;
+}
+
+.hr-border{
   border: 1px solid #f1f1f1;
 }
 
-section#about article h1 {
+.article-h1 {
   font-size: 2.3em;
   font-family: Georgia, serif; 
   font-weight: 300;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
-section#about article h3 {
-  font-weight: 300;
+.article-h3 {
+  font-weight: 400;
+  letter-spacing: 4px;
 }
 
-section#about p {
-  font-size: 1.18em;
-}
-
-section#about span {
-  background: #f1f1f1;
+.highlight-padding {
   padding: 2px 5px;
 }
 
-section#about #art-2 h3{
-  font-weight: normal;
+.highlight-gray {
+  background: #f1f1f1;
 }
 
-section#about #art-2 p{
-  font-size: 14px;
+.contact-section {
+  font-family: Georgia, serif !important;
 }
 
-section#contact {
-  font-family: Georgia, serif;
-}
-
-section#contact h1 {
+.contact-h1 {
   font-weight: 400;
   font-size: 2.5em;
   margin-bottom: 50px;
+  letter-spacing: 2px;
 }
 
-section#contact .large-blue-txt {
+.large-blue-txt {
   color: #607d8b;
   font-size: 20px;
 }
 
-section#contact input {
+input {
   border: none;
-  border-bottom: 1px solid #777;
   margin-bottom: 10px;
   width: 100%;
   padding: 25px;
@@ -136,17 +143,21 @@ section#contact input {
   outline: none;
 }
 
-section#contact input:focus {
+.input-color {
+  border-bottom: 1px solid #777;
+}
+
+input:focus {
   border-bottom: 1px solid limegreen;
 }
 
-section#contact input[type="button"] {
+.input-button {
   padding: 15px;
   width: auto;
   background: lightgray;
 }
 
-section#contact input[type="button"]:hover {
+.input-button:hover {
   cursor: pointer;
   border-bottom: 1px solid limegreen;
 }
@@ -158,21 +169,18 @@ section#contact input[type="button"]:hover {
   header {
     background-position-x: 31%;
   }
-  section#about .flex {
+  .container-large {
     flex-direction: column;
   }
-  section#about img {
-    position:relative;
-    left: 20%;
-  }
+  
 }
 
 @media(max-width: 800px) {
-  section#about img {
-    position:relative;
-    left: 10%;
+  section {
+    padding: 0;
   }
-  section#about .img-1,.img-2 {
+
+  .tableset-img {
     max-width: 100%;
     min-width: 200px;
   }
@@ -185,17 +193,11 @@ section#contact input[type="button"]:hover {
   nav>div {
     display: none;
   }
-  section#about img {
-    position:relative;
-    left: 0%;
+
+  article {
+    margin: 20px;
   }
-  section#about article#art-1 {
-    margin-left: 0;
-  }
-  section#about article#art-2 {
-    margin-right: 0;
-  }
-  section#contact form input:not([type="button"]) {
+  input:not([type="button"]) {
     padding: 25px 0;
   }
 }
