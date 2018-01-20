@@ -10,41 +10,48 @@ header {
   position: relative;
   top: -8px;
   left: -8px;
-  background-image: url("../images/architect.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
 }
 
-header nav {
+.building-bg {
+  background-image: url("../images/architect.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
-  box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
   justify-content: space-between;
   z-index: 1;
 }
 
-header a {
+.nav-style {
+  background: white;
+  box-shadow: 3px 4px 3px rgba(0,0,0,0.4);
+}
+
+a {
   text-decoration: none;
-  color: black;
   font-weight: 500;
   padding: 8px 16px;
   font-size: 16px;
 }
 
-header a span {
-  font-weight: bold;
-}
-
-header a:hover {
+.nav-a:hover {
   background: lightgray;
 }
 
-nav div {
+.nav-span {
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.nav-div {
   margin-top: 7px;
   padding: 15px 18px;
 }
@@ -58,7 +65,7 @@ nav div {
   border-bottom: 2px solid lightgray;
 }
 
-div.title {
+.title-wrapper {
   position: absolute;
   top: 55%;
   left: 50%;
@@ -66,7 +73,7 @@ div.title {
   opacity: 0.95;
 }
 
-div.title h1, div.title span {
+.title-display {
   float: left;
   color: white;
   font-weight: 500;
@@ -74,18 +81,20 @@ div.title h1, div.title span {
   padding: 8px 15px;
 }
 
-div.title h1 {
+.title-h1 {
   margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-div.title span {
+.title-span {
   font-weight: bold;
   background: #222;
   padding: 8px 15px;
   opacity: 0.95;
 }
 
-section#projects {
+.section-padding {
   padding: 40px 0;
 }
 
@@ -96,160 +105,163 @@ section#projects {
   max-width: 95%;
 }
   
-.h1-container h1 {
+.h1-container-heading {
   padding-bottom: 20px;
   border-bottom: 1px solid #f1f1f1;
   font-weight: 400;
 }
 
-.house-set1, .house-set2 {
+.house-set {
+  display: flex;
   width: 100%;
 }
 
-.house-set1 img, .house-set2 img {
+.house-set-imgs {
   width: 100%;
   height: auto;
 }
 
-.house-set1>div, .house-set2>div {
+.house-set-divs {
   position: relative;
   padding: 0 8px;
 }
 
-.house-set1>div span, .house-set2>div span {
+.house-name {
   position: absolute;
   top: 0;
   padding: 10px 15px;
+}
+
+.house-name-display {
   color: white;
   background: black;
 }
 
-section#about .h1-container {
+.h1-container {
   padding-bottom: 0;
 }
 
-section#about .openning-p {
+.openning-p {
   width: 95%;
   padding: 0 32px;
   line-height: 1.5;
   font-size: 20px;
 }
 
-section#about .team-container {
+.team-container {
+  display: flex;
   padding: 25px 20px 0 20px;
   width: 95%;
 }
 
-section#about .team-container h1 {
+.team-container-h1 {
   font-weight: 500;
 }
 
-section#about .team-container img {
+.team-container-img {
   width: 100%;
   height: auto;
 }
 
-section#about .team-container div {
+.team-container-div {
   padding: 8px;
 }
 
-section#about .team-container button  {
+.team-container-button  {
   padding: 8px 16px;
   width: 100%;
   font-size: 16px;
   text-transform: capitalize;
-  background: #f1f1f1;
   outline: 0;
   border: none;
   vertical-align: middle;
 }
 
-section#about .team-container button:hover {
+.team-container-button:hover {
   cursor: pointer;
   background: lightgray;
 }
 
-section#contact {
-  padding-top: 40px;
+.button-bg-white {
+  background: #f1f1f1;
 }
 
-section#contact .h1-container {
-  padding-bottom: 0;
-}
-
-section#contact p {
+.contact-p {
   padding-left: 32px;
 }
 
-section#contact form {
+.contact-form {
   padding: 5px 0 20px 32px;
 }
 
-form input:not([type="button"]) {
+input:not([type="button"]) {
   width: 97%;
   font-size: 16px;
   padding: 15px 5px;
   outline: none;
+}
+
+.input-border {
   border: none;
   border-bottom: 1px solid lightgray;
 }
 
-form input:not([type="button"]):hover, form input:not([type="button"]):focus {
+.input-border:hover, .input-border:focus {
   border-bottom: 1px solid black;
 }
 
-form input[type="button"] {
+input[type="button"] {
   display: block;
   width: 160px;
   font-size: 16px;
-  background: black;
-  color: white;
   border: none;
   border-radius: 0;
   margin-top: 20px;
   padding: 10px 15px;
 }
 
-form input[type="button"]:hover {
+.black-bg-style {
+  background: black;
+  color: white;
+}
+
+.input-button-style:hover {
   cursor: pointer;
   background: lightgray;
   color: black;
 }
-div#googleMap {
+
+.gray-filter {
   filter: grayscale(75%);
 }
 
 footer {
   padding: 40px 0px;
   margin: 0;
-  background: black;
-  color: white;
   width: 100%;
   text-align: center;
 }
 
-footer a {
-  color: white;
-}
-
-footer a:hover, footer a:active {
+.footer-a:hover, .footer-a:active {
   color: darkred;
+  background: none;
 }
 
 @media(max-width: 690px) {
-  nav>div, div.title h1 {
+  .title-h1 {
     display: none;
   }
-  .house-set1, .house-set2 {
+  .house-set {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .h1-container {
     padding-left: 0;
   }
-  section#about .openning-p {
+  .openning-p {
     padding: 0 15px;
   }
-  section#about .team-container {
+  .team-container {
     flex-wrap: wrap;
     padding: 0;
     width: 100%;
