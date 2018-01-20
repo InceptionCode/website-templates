@@ -248,6 +248,9 @@ footer {
 }
 
 @media(max-width: 690px) {
+  .nav-a:not(.home-nav) {
+    display:none;
+  }
   .title-h1 {
     display: none;
   }
