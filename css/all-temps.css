@@ -65,6 +65,11 @@
   background: white;
 }
 
+.black-bg-style {
+  background: black;
+  color: white;
+}
+
 .container-large {
   max-width: 1100px;
   margin: 10px auto;

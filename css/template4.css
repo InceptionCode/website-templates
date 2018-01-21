@@ -8,23 +8,24 @@
 }
 
 header {
+  height: 100vh;
+}
+
+.parallax-bg-1{
   background-image: url("../images/parallax1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
   opacity: 0.75;
 }
 
-header h1 {
+.header-h1 {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: black;
-  color: white;
   padding: 12px 24px;
   text-transform: uppercase;
   text-align: center;
@@ -33,7 +34,7 @@ header h1 {
   font-size: 24px;
 }
 
-h1.mobile {
+.mobile {
   display: none;
 }
 
@@ -43,7 +44,8 @@ nav {
   width: 100%;
   z-index: 1;
 }
-nav a {
+
+.nav-a {
   display: inline-block;
   border: none;
   outline: none;
@@ -54,55 +56,57 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:not(.search):hover {
+.nav-a:not(.search):hover {
   background: lightgray;
   color: black;
   box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
 }
 
-nav a.search {
+.search {
   float: right;
 }
 
-nav a.search:hover {
+.search:hover {
   background: orangered;
   color: white;
 }
 
-nav i {
+.nav-fa {
   margin-right: 3px;
 }
 
 .mobile-nav {
   display: none;
 }
-i.fa-bars, i.fa-times {
+.nav-toggle-i {
   position: absolute;
   right: 0;
   top: 13px;
   font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
 }
 
-i.fa-bars:hover, i.fa-times {
+.nav-toggle-i:hover {
   cursor: pointer;
+  transform: scale(1.10);
 }
 
-.mobile-nav li {
+.mobile-nav-li {
   list-style: none;
 }
-.mobile-nav li:not(.home){
+.mobile-nav-li:not(.home){
   background: white;
 }
 
-.mobile-nav a {
+.mobile-nav-a {
   width: 100%;
 }
 
-.mobile-nav a:not([href = "#home"]) {
+.mobile-nav-a:not([href = "#home"]) {
   color: black !important;
 }
 
-.mobile-nav a.search {
+.mobile-search {
   float: none;
   background: white;
 }
@@ -113,27 +117,24 @@ section {
   line-height: 1.8;
 }
 
-section#about {
+.section-padding {
   padding-bottom: 0;
 }
 
-section#about h1, section#about p.sub-about {
-  text-align: center;
-}
-
-section#about h1 {
+.about-h1 {
   padding: 20px 0;
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
 }
 
-section#about p.sub-about {
+.sub-about {
   font-size: 14px;
   padding-bottom: 20px;
 }
 
-section#about .paragraph-container {
+.paragraph-container {
+  display: flex;
   flex-direction: column;
   max-width: 980px;
   padding-bottom: 40px;
@@ -141,233 +142,286 @@ section#about .paragraph-container {
   font-size: 15px;
 }
 
-.paragraph-container p {
+.about-p {
   margin: 15px;
 }
 
-section#about .profile-desc {
+.profile-desc {
+  display: flex;
   max-width: 980px;
   margin: auto;
   font-size: 15px;
 }
 
-section#about .profile-desc img {
+.profile-desc-img {
   width: 100%;
   height: auto;
   opacity: 0.75;
 }
 
-section#about .profile-desc img:hover {
+.profile-desc-img:hover {
   opacity: 1;
 }
 
-section#about .profile-desc div  {
+.profile-desc-div  {
   width: 50%;
   margin: 0 25px;
 }
 
-section#about .name-container i  {
+.name-container-i  {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
   font-size: 1.2em;
 }
 
-section#about .name-container {
+.name-container {
   font-weight: bold;
   width: 130px!important;
   margin: auto auto 40px auto!important;
 }
 
-@media(max-width: 850px) {
-  header h1 {
-    font-size: 20px;
-    letter-spacing: 6px;
-  }
-  section#about .profile-desc {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-  section#about .profile-desc {
-    width: 80%;
-    justify-content: center;
-  }
-  section#about .profile-desc div {
-    width: 100%;
-    margin: 0;
-  }
-  section#about .profile-desc div:nth-child(2) p {
-    display: none;
-  }
-  section#about .name-container {
-    font-size: 18px;
-  }
-}
 
-section#about .skills-wrapper {
+.skills-wrapper {
   max-width: 980px;
   margin: auto;
 }
 
-section#about .skill-container {
+.skill-container {
   background: lightgray;
 }
 
-section#about .skill-container div {
+.skill-amounts {
   background: #616161;
   color: white;
   padding: 8px;
 }
 
-section#about .skills {
+.skills {
   margin: 40px 0;
 }
 
-section#about .skill-title {
+.skill-title {
   letter-spacing: 10px;
   font-size: 18px;
 }
 
-section#about .skill-amount-1 {
+.skill-amount-1 {
   width: 90%;
 }
 
-section#about .skill-amount-2 {
+.skill-amount-2 {
   width: 85%; 
 }
 
-section#about .skill-amount-3 {
+.skill-amount-3 {
   width: 75%;
 }
 
-section#about .statistics {
-  background: #616161;
-  color: White;
+.statistics {
+  display: flex;
   font-weight: 300;
   justify-content: space-around;
   margin: 40px 0 0 0;
 }
 
-section#about .statistics div {
+.statistics-style {
+  background: #616161;
+  color: White;
+}
+
+.statistics-div {
   min-width: 100px;
   padding: 24px 0;
 }
 
-section#about .statistics h2 {
+.statistics-h2 {
   font-weight: 300;
 }
 
-section#portfolio {
-  padding-top: 0;
-  padding-left: 64px;
-  padding-right: 64px;
+.portfolio-section {
+  padding: 0;
 }
 
-section#portfolio .parallaxed {
+.parallaxed {
   position: relative;
+  min-height: 400px;
+}
+
+.parallax-bg-2 {
   background-image: url('../images/parallax2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 400px;
   opacity: 0.75;
 }
 
-section#portfolio .parallaxed h1, section#contact .parallaxed h1 {
+.parallaxed-h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 10px;
 }
 
-section#portfolio .my-work, section#contact .wheres-work {
+.work-heading {
   margin: 60px 0 20px 0;
   font-weight: 400;
 }
-section#portfolio .click-instructions {
+
+.click-instructions {
   margin-bottom: 40px;
 }
 
-section#portfolio .work-container {
+.work-container {
   max-width: 980px;
   margin: auto;
 }
 
-section#portfolio .work-container button {
+.work-container-button {
   display: block;
   padding: 10px;
   width: 130px;
   margin: 10px auto 0 auto;
-  background: lightgray;
-  color: black;
   font-size: 15px;
 }
 
-section#portfolio .work-container button:hover {
+.button-gray-style {
+  background: lightgray;
+  color: black;
+}
+
+.button-gray-style:hover {
   cursor: pointer;
   background: gray;
   color: white;
 }
 
-section#portfolio .work-row {
+.work-row {
   display: flex;
 }
 
-section#portfolio .work-row div {
+.work-row-div {
   width: 24.9999%;
   padding: 8px;
 }
 
-section#portfolio .work-row img {
+.work-row-img {
   width: 100%;
   max-height: 163px;
 }
 
-section#portfolio .work-row img:hover {
+.work-row-img:hover {
   cursor: pointer;
   opacity: 0.75;
 }
 
-section#contact .parallaxed {
-  position: relative;
+.parallax-bg-3 {
   background-image: url('../images/parallax3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 400px;
-  opacity: 0.75;
 }
 
-section#contact .location-container {
-  max-width: 980px;
+.location-container {
+  display: flex;
+  max-width: 768px;
   margin: 20px auto;
 }
 
-section#contact .map-wrapper {
-  width: 33.333333%;
+.map-wrapper {
+  width: 33.3333%;
   margin-right: 16px;
+}
+
+.grayscale {
+  filter: grayscale(0.75);
   opacity: 0.75;
 }
 
-section#contact .contact-form span {
+.contact-span {
   font-size: 18px;
   display: block;
 }
 
-section#contact .contact-form p span {
+.coffee-span {
   display: initial;
 }
 
-section#contact .contact-form i:not(.fa-coffee) {
+.contact-icons{
   font-size: 24px;
   margin-right: 16px;
+}
+
+.input-row {
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+
+.input-wrapper{
+  float: left;
+  padding: 0 8px;
+  width: 49.9999%;
+}
+
+.form-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.message-input {
+  width: 100%;
+}
+
+.form-button {
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 175px;
+  padding: 10px;
+  border: none;
+  float: right;
+  margin-right: 5px;
+}
+
+.button-i {
+  margin-right: 5px;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background: lightgray;
+  color: black;
+}
+
+@media(max-width: 850px) {
+  .header-h1 {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .profile-desc {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .profile-desc {
+    width: 80%;
+    justify-content: center;
+  }
+  .profile-desc-div {
+    width: 100%;
+    margin: 0;
+  }
+  .desc-paragraph {
+    display: none;
+  }
+  .name-container {
+    font-size: 18px;
+  }
 }
 
 @media(max-width: 625px) {
@@ -385,6 +439,17 @@ section#contact .contact-form i:not(.fa-coffee) {
   section#portfolio .work-row img {
     max-height: none;
     height: auto;
+  }
+  .location-container {
+    flex-direction: column; 
+    width: 95%;
+    justify-content: center;
+  }
+  .map-wrapper {
+    width: 90%;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

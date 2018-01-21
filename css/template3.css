@@ -220,11 +220,6 @@ input[type="button"] {
   padding: 10px 15px;
 }
 
-.black-bg-style {
-  background: black;
-  color: white;
-}
-
 .input-button-style:hover {
   cursor: pointer;
   background: lightgray;
