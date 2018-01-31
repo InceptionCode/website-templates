@@ -211,7 +211,7 @@ section {
 }
 
 .skill-amount-2 {
-  width: 85%; 
+  width: 85%;
 }
 
 .skill-amount-3 {
@@ -329,12 +329,12 @@ section {
 
 .location-container {
   display: flex;
-  max-width: 768px;
-  margin: 20px auto;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .map-wrapper {
-  width: 33.3333%;
+  width: 27.3333%;
   margin-right: 16px;
 }
 
@@ -358,33 +358,37 @@ section {
 }
 
 .input-row {
+  display: flex;
   margin-bottom: 8px;
-  padding: 0 8px;
 }
 
-.input-wrapper{
-  float: left;
-  padding: 0 8px;
-  width: 49.9999%;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-input {
+  flex-grow: 1;
   padding: 8px;
   font-size: 16px;
-  width: 100%;
+}
+
+.form-input[name="Name"] {
+  margin-right: 8px;
 }
 
 .message-input {
-  width: 100%;
+  margin-bottom: 15px;
 }
 
 .form-button {
+  position: relative;
+  left: 57%;
   font-size: 16px;
   text-transform: uppercase;
   width: 175px;
   padding: 10px;
   border: none;
-  float: right;
   margin-right: 5px;
 }
 
@@ -441,12 +445,12 @@ section {
     height: auto;
   }
   .location-container {
-    flex-direction: column; 
+    flex-direction: column;
     width: 95%;
     justify-content: center;
   }
   .map-wrapper {
-    width: 90%;
+    width: 70%;
     margin-bottom: 25px;
     margin-right: auto;
     margin-left: auto;
