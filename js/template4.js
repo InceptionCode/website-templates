@@ -4,7 +4,7 @@ const navLarge = document.querySelector(".desktop-nav"),
     exitToggle = document.querySelector(".fa-times"),
     navElements = document.querySelectorAll(".mobile-nav li");
 
-const changeNavBg = ()=> {
+const changeNavBg = () => {
     if (window.scrollY > 0) {
         navLarge.style = "background: #fff";
         navMobile.style = "background: #fff";
@@ -29,7 +29,7 @@ const toggleNavElements = action => {
     });
 };
 
-const toggleNav = (e)=> {
+const toggleNav = (e) => {
     e.target.classList.add("dn");
     e.target.classList.remove("di");
     if (e.target === navToggle) {
@@ -43,6 +43,12 @@ const toggleNav = (e)=> {
     }
 };
 
-window.onscroll = function () { changeNavBg(); };
-navToggle.onclick = function (e) {  toggleNav(e); };
-exitToggle.onclick = function (e) {  toggleNav(e); };
+window.onscroll = function () {
+    changeNavBg();
+};
+navToggle.onclick = function (e) {
+    toggleNav(e);
+};
+exitToggle.onclick = function (e) {
+    toggleNav(e);
+};
