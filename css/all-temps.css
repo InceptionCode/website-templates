@@ -1,16 +1,17 @@
 .di {
-  display: initial;
+  display: initial !important;
 }
 
 .dn {
-  display: none;
+  display: none !important;
 }
 
 .db {
-  display: block;
+  display: block !important;
 }
+
 .dib {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .upper {
@@ -29,7 +30,7 @@
   text-align: center;
 }
 
-.justify-txt{
+.justify-txt {
   text-align: justify;
 }
 
@@ -74,25 +75,27 @@
   max-width: 1100px;
   margin: 10px auto;
 }
+
 .container {
   max-width: 960px;
   margin: 10px auto;
 }
 
 /* Navigation */
+
 .temp-nav {
   position: fixed;
   top: 50%;
   right: 0;
   left: unset;
-  padding:0!important;
+  padding: 0 !important;
   background: black;
   opacity: 0.5;
-  box-shadow: 2px 5px 4px rgba(0,0,0,0.6);
-  width: 50px!important;
-  height: 50px!important;
-  border-radius: 50%!important;
-  z-index: 1000!important;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.6);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  z-index: 1000 !important;
   transition: 0.5s ease-in-out all;
 }
 
@@ -101,7 +104,7 @@ div.temp-nav-options {
   right: 0;
   top: 50%;
   transform: translateX(100%);
-  width: 300px!important;
+  width: 300px !important;
   background: black;
   z-index: 1000;
   transition: 0.5s ease-in-out all;
@@ -110,7 +113,7 @@ div.temp-nav-options {
 div.temp-nav-options a {
   display: block;
   margin: 10px 5px;
-  padding: 10px!important;
+  padding: 10px !important;
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   text-decoration: none;
@@ -136,11 +139,13 @@ div.temp-nav-options a:hover {
 }
 
 /* Media */
+
 @media(max-width: 650px) {
   .container-large {
     max-width: 100%;
   }
 }
+
 @media(max-width:410px) {
   .justify {
     text-align: left;
