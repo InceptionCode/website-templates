@@ -66,6 +66,10 @@
   background: white;
 }
 
+.bg-trans {
+  background: transparent;
+}
+
 .black-bg-style {
   background: black;
   color: white;
