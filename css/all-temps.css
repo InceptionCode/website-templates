@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .tracked {
   letter-spacing: 2px;
 }
@@ -60,6 +64,14 @@
 
 .bg-black {
   background: black;
+}
+
+.bg-lightgray {
+  background: lightgray;
+}
+
+.bg-brightgray {
+  background: #f1f1f1;
 }
 
 .bg-white {

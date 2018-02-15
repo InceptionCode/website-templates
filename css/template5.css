@@ -25,14 +25,19 @@ header {
 }
 
 .blog-section {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 32px;
+    width: 100%;
+    margin: auto 32px;
 }
 
-.blog-wrapper {
+.blog-container {
     position: relative;
     margin-bottom: 32px;
+}
+
+.card-shadow {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -49,6 +54,7 @@ header {
     width: 80%;
     margin-left: 15px;
     margin-right: auto;
+    font-weight: 300;
 }
 
 .blog-img {
@@ -72,4 +78,28 @@ header {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+/* Aside */
+.blog-aside{
+    display: grid;
+    grid-template-rows: 35% 20% 15%;
+    grid-row-gap: 25px;
+    margin-right: 55px;
+}
+
+.name-container {
+    padding-bottom: 10px;
+}
+
+.author {
+    font-weight: 400;
+}
+
+.aside-card {
+    padding: 8px 20px;
+}
+
+.card-title {
+    font-weight: 400;
 }
