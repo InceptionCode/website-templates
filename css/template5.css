@@ -24,6 +24,10 @@ header {
     padding: 2px 8px;
 }
 
+.--commented {
+    border-radius: 50%;
+}
+
 .blog-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -84,7 +88,7 @@ header {
 .blog-aside{
     display: grid;
     grid-template-rows: 37% 30.5% 18%;
-    grid-row-gap: 25px;
+    grid-row-gap: 42px;
     margin-right: 55px;
 }
 
