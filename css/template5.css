@@ -29,7 +29,7 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 32px;
     width: 100%;
-    margin: auto 32px;
+    margin: auto 28px;
 }
 
 .blog-container {
@@ -83,13 +83,18 @@ header {
 /* Aside */
 .blog-aside{
     display: grid;
-    grid-template-rows: 35% 20% 15%;
+    grid-template-rows: 37% 30.5% 18%;
     grid-row-gap: 25px;
     margin-right: 55px;
 }
 
 .name-container {
     padding-bottom: 10px;
+}
+
+.bio {
+    width: 90%;
+    font-size: 17px;
 }
 
 .author {
@@ -101,5 +106,55 @@ header {
 }
 
 .card-title {
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.s-thumbnail {
+    width: 50px;
+    margin-left: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    float: left;
+}
+
+.post-display {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-display:hover {
+    cursor: pointer;
+    background: lightgray;
+}
+.post-title, .post-desc {
+    margin: 5px 0;
+}
+.post-title {
+    font-size: 18px;
+}
+
+.post-desc {
+    font-weight: 300;
+}
+
+
+/* Tags */
+
+.span-container {
+    padding: 8px 13px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12.5px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 6px;
+    margin-bottom: 20px;
+}
+
+.active {
+    font-size: 14px;
+    padding: 5px 8px;
 }
