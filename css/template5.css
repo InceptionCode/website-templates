@@ -87,7 +87,7 @@ header {
 /* Aside */
 .blog-aside{
     display: grid;
-    grid-template-rows: 37% 30.5% 18%;
+    grid-template-rows: 37% 31.5% 19%;
     grid-row-gap: 42px;
     margin-right: 55px;
 }
@@ -161,4 +161,21 @@ header {
 .active {
     font-size: 14px;
     padding: 5px 8px;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+    .blog-aside {
+        grid-template-rows: 37% 33.5% 21%;
+    }    
+}
+
+@media (max-width: 992px) {
+    .blog-section {
+        grid-template-columns: 98%;
+        margin: auto 10px;
+    }
+    .blog-aside {
+        margin-right: 0;
+    }
 }
